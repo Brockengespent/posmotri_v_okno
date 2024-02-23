@@ -137,7 +137,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  width: -moz-fit-content;
   width: fit-content;
   border: none;
 }
@@ -176,7 +175,6 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
