@@ -214,7 +214,7 @@ ol {
 /* контент */
 
 .content {
-  margin-top: 133px;
+  padding-top: 133px;
   margin-left: 30px;
   display: flex;
   align-items: end;
