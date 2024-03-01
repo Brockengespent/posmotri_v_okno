@@ -47,6 +47,12 @@ ol {
   line-height: 94%;
 }
 
+/* Плейсхолдер */
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /* Скрытие */
 
 .visually-hidden {
@@ -60,21 +66,15 @@ ol {
   white-space: nowrap;
 }
 
-/* Плейсхолдер */
-
-::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 /* Кнопки */
 
 .button {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  padding: 6px 0;
   color: #fff;
   background: none;
+  padding: 6px 0;
   border: 1px solid currentColor;
   cursor: pointer;
 }
@@ -122,8 +122,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
   height: 386px;
+  width: 711px;
 }
 
 /* Форма */
@@ -184,8 +184,8 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  width: 19px;
   height: 19px;
+  width: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,8 +195,8 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
-  width: 15px;
   height: 15px;
+  width: 15px;
   background-color: white;
 }
 
@@ -208,8 +208,8 @@ ol {
 /* контент */
 
 .content {
-  padding-top: 300px;
   margin-left: 30px;
+  padding-top: 300px;
   display: flex;
   align-items: end;
   gap: 30px;
@@ -291,8 +291,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
   height: 103px;
+  width: 194px;
   margin-left: auto;
   -o-object-position: 50% 50%;
   object-position: 50% 50%;
