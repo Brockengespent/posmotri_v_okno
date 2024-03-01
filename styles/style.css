@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -47,12 +50,6 @@ ol {
   line-height: 94%;
 }
 
-/* Плейсхолдер */
-
-::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 /* Скрытие */
 
 .visually-hidden {
@@ -66,15 +63,21 @@ ol {
   white-space: nowrap;
 }
 
+/* Плейсхолдер */
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /* Кнопки */
 
 .button {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
+  padding: 6px 0;
   color: #fff;
   background: none;
-  padding: 6px 0;
   border: 1px solid currentColor;
   cursor: pointer;
 }
@@ -122,8 +125,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  height: 386px;
   width: 711px;
+  height: 386px;
 }
 
 /* Форма */
@@ -137,6 +140,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  width: -moz-fit-content;
   width: fit-content;
   border: none;
 }
@@ -175,6 +179,7 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -184,8 +189,8 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  height: 19px;
   width: 19px;
+  height: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,8 +200,8 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
-  height: 15px;
   width: 15px;
+  height: 15px;
   background-color: white;
 }
 
@@ -209,7 +214,6 @@ ol {
 
 .content {
   margin-left: 30px;
-  padding-top: 300px;
   display: flex;
   align-items: end;
   gap: 30px;
@@ -283,16 +287,22 @@ ol {
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
+  max-width: fit-content;
 }
 
 .content__video-card-description {
   font-weight: 400;
   line-height: 90%;
+  max-width: fit-content;
+  word-wrap: break-word;
 }
 
 .content__video-card-thumbnail {
-  height: 103px;
   width: 194px;
+  height: 103px;
   margin-left: auto;
   -o-object-position: 50% 50%;
   object-position: 50% 50%;
