@@ -4,3 +4,4 @@
 2) js-скрипты (scripts)
 3) html код (index.html)
 4) css код (styles.css)
+https://github.com/Brockengespent/posmotri_v_okno.git
